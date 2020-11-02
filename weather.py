@@ -14,6 +14,10 @@ def get_location():
 def get_weather(loc):
 	weather = requests.get("https://api.openweathermap.org/data/2.5/onecall?lat=" + str(home[0]) + "&lon=" + str(home[1]) + "&units=metric&appid=" + apikey)
 	return weather.json()
+# 	Dictionary structure: 	[current][dt][sunrise][sunset][...]
+#							[minutely][dt][precipitation] - repeats 120 times
+#							[hourly][dt][temp][...] - repeats 48 times
+#							[daily][dt][sunrise][sunset][...] - repeats 8 times, includes today's weather. """
 
 # Convert from UNIX time to something understandable.
 def readable_time(dt):
