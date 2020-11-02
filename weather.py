@@ -74,10 +74,10 @@ def next_sun(sb):
 
 
 
-# API Key:  4134492269497d50deb41b893bab3cb9
+# API Key:  
 home = []
 sunshine = []
-apikey = "4134492269497d50deb41b893bab3cb9"
+apikey = ""
 
 # Figure out where we are, and get our weather info.
 try:
